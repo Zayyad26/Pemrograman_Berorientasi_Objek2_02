@@ -1,6 +1,6 @@
 class Family:
     def show_family(self):
-        print("This is our family:")
+        print("Inilah keluarga kami:")
  
 
 class Father(Family):
@@ -19,12 +19,12 @@ class Mother(Family):
  
 class Son(Father, Mother):
     def show_parent(self):
-        print("Father :", self.fathername)
-        print("Mother :", self.mothername)
+        print("Ayah :", self.fathername)
+        print("Ibu :", self.mothername)
  
  
 s1 = Son()  # Object of Son class
-s1.fathername = "Mark"
-s1.mothername = "Sonia"
+s1.fathername = "Soleh"
+s1.mothername = "Rusmiati"
 s1.show_family()
 s1.show_parent()
