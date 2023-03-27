@@ -1,19 +1,19 @@
-class Hewan:
+class Binatang:
     def __init__(self, nama, umur):
         self.nama = nama
         self.umur = umur
     
     def bergerak(self):
-        print(self.nama, "Berjalan")
+        print(self.nama, "Berlari")
 
-class Kucing(Hewan):
-    def __init__(self, nama, umur, jenis_bulu):
+class Kuda(Binatang):
+    def __init__(self, nama, umur, jenis_kuda):
         super().__init__(nama, umur)
-        self.jenis_bulu = jenis_bulu
+        self.jenis_kuda = jenis_kuda
     
     def bersuara(self):
-        print(f"{self.nama} Yang Berumur {self.umur} Tahun Dengan Jenis {self.jenis_bulu} Bersuara Meow")
+        print(f"{self.nama} Yang Berumur {self.umur} Tahun Dengan Jenis {self.jenis_kuda} Berlari dengan cepat")
 
-kucingA = Kucing("Komeng", 3, "British Short Hair")
-kucingA.bergerak()
-kucingA.bersuara()
+kudaA = Kuda("Flawless", 3, "Morgan")
+kudaA.bergerak()
+kudaA.bersuara()
